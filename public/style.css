@@ -1,0 +1,80 @@
+/* public/style.css */
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+}
+
+h3 {
+    color: #075e54;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #075e54;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.msg {
+    background-color: #dcf8c6;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+a {
+    color: #075e54;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button,
+form input {
+    margin-right: 10px;
+}
+
+form input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+form button {
+    flex-shrink: 0;
+}

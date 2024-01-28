@@ -1,0 +1,30 @@
+<!-- views/new-chat-form.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (head section) ... -->
+</head>
+<body>
+    <h3>Create or Edit Chat</h3>
+
+    <!-- Form for creating or updating a chat -->
+    <form action="/chats/<%= chat._id %>?_method=PUT" method="POST">
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" value="<%= chat ? chat.from : '' %>" required>
+
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" value="<%= chat ? chat.to : '' %>" required>
+
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="msg" rows="4" required><%= chat ? chat.msg : '' %></textarea>
+
+        <button type="submit">Save</button>
+    </form>
+
+    <br>
+
+    <!-- Link to create a new chat -->
+    <a href="/chats/new">Create New Chat</a>
+</body>
+</html>
